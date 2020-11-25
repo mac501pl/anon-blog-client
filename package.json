@@ -1,0 +1,129 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "5.11.5",
+    "@testing-library/react": "11.1.2",
+    "@testing-library/user-event": "12.2.2",
+    "@types/jest": "26.0.15",
+    "@types/node": "14.14.7",
+    "@types/react": "16.9.56",
+    "@types/react-dom": "16.9.9",
+    "react": "17.0.1",
+    "react-cookie-consent": "^6.1.0",
+    "react-dom": "17.0.1",
+    "react-scripts": "4.0.0",
+    "typescript": "4.0.5",
+    "web-vitals": "0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "parserOptions": {
+      "project": [
+        "./tsconfig.json"
+      ],
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+    },
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "error",
+      "@typescript-eslint/array-type": [
+        "warn",
+        {
+          "default": "generic"
+        }
+      ],
+      "@typescript-eslint/explicit-member-accessibility": [
+        "error"
+      ],
+      "@typescript-eslint/consistent-type-definitions": [
+        "error",
+        "interface"
+      ],
+      "@typescript-eslint/no-empty-interface": [
+        "error"
+      ],
+      "@typescript-eslint/prefer-readonly": [
+        "warn"
+      ],
+      "@typescript-eslint/no-inferrable-types": [
+        "error"
+      ],
+      "comma-dangle": [
+        "error"
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "object-shorthand": [
+        "error",
+        "never"
+      ],
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "object-curly-spacing": ["error", "always"],
+      "array-bracket-spacing": ["error", "never"],
+      "space-in-parens": ["error", "never"],
+      "no-tabs": ["error"]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "4.11.0",
+    "@material-ui/icons": "4.9.1",
+    "@types/cookie": "0.4.0",
+    "@types/uuid": "8.3.0",
+    "axios": "0.21.0",
+    "cookie": "0.4.1",
+    "formik": "2.2.4",
+    "uuid": "8.3.1",
+    "@typescript-eslint/parser": "4.7.0",
+    "@typescript-eslint/eslint-plugin": "4.7.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "babel-eslint": "10.1.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-jest": "24.1.0",
+    "eslint-plugin-testing-library": "3.10.0"
+  }
+}
