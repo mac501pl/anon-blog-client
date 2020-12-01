@@ -27,5 +27,9 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          whoami
-          ls -lha
+          cd anon-blog-client
+          git pull origin master
+          docker kill client
+          docker rm client
+          docker build -t anon-blog-client .
+          docker run --publish 80:3000 --detach --name client anon-blog-client
