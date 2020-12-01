@@ -4,3 +4,13 @@ body {
 	justify-content: center;
 	background-color: #eeeeee;
 }
+
+#root {
+	width: 60vw;
+}
+
+@media (max-width: 958px) {
+	#root {
+		width: 100vw;
+	}
+}

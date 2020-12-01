@@ -41,7 +41,7 @@ const App: React.FC = (): JSX.Element => {
   }, []);
 
   return (
-    <div style={{ width: '60vw' }}>
+    <div>
       <NewPostForm userId={userId} addPost={addPost} />
       <Posts userId={userId} posts={posts} removePost={removePost} />
       <CookieConsent buttonText="OK">Ta strona używa ciasteczek!</CookieConsent>
