@@ -3,7 +3,7 @@ name: anon-blog-client CI
 on: [push]
 
 jobs:
-  build-test-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     
