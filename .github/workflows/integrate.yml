@@ -32,4 +32,4 @@ jobs:
           docker kill client
           docker rm client
           docker build -t anon-blog-client .
-          docker run --publish 80:3000 --detach --name client anon-blog-client
+          docker run --publish 80:80 --detach --name client anon-blog-client
