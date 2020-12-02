@@ -9,8 +9,16 @@ body {
 	width: 60vw;
 }
 
+.comment-form {
+	width: 60%;
+}
+
 @media (max-width: 958px) {
 	#root {
 		width: 100vw;
+	}
+
+	.comment-form {
+		width: 100%;
 	}
 }

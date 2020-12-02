@@ -108,7 +108,7 @@ const PostView: React.FC<IPost & PostViewProps> = ({ userId, removePost, ...post
         <UpvotesComponent handleDownvote={handleDownvote} handleUpvote={handleUpvote} isDownvoter={isDownvoter} isUpvoter={isUpvoter} upvotes={upvoters.length - downvoters.length} />
         {userId === posterId && <EditAndDeleteComponent editing={editing} handleDelete={handleDelete} setEditing={setEditing} />}
       </CardActions>
-      <div style={{ width: '60%' }}>
+      <div className="comment-form">
         <NewCommentForm postId={_id} userId={userId} addComment={addComment} />
         <Comments userId={userId} removeComment={removeComment} comments={comments} postId={_id} />
       </div>
